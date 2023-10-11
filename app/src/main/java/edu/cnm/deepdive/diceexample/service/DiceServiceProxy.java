@@ -17,7 +17,7 @@ import retrofit2.http.Query;
 public interface DiceServiceProxy {
 
   @GET("api")
-  Single<Roll[]> rollDice(@Query("nbde") int numberOfDice, @Query("tbde") int numberOfSides);
+  Single<Roll[]> rollDice(@Query("nbde") int numberOfDice, @Query("tpde") int numberOfSides);
 
   static DiceServiceProxy getInstance() {
     return InstanceHolder.INSTANCE;
