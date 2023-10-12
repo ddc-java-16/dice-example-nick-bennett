@@ -1,4 +1,4 @@
-package edu.cnm.deepdive.diceexample;
+package edu.cnm.deepdive.diceexample.viewmodel;
 
 import android.app.Application;
 import androidx.lifecycle.AndroidViewModel;

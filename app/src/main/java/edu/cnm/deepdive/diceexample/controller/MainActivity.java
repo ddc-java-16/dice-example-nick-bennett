@@ -1,16 +1,13 @@
-package edu.cnm.deepdive.diceexample;
+package edu.cnm.deepdive.diceexample.controller;
 
 import android.util.Log;
-import android.view.View;
-import android.view.View.OnClickListener;
 import android.widget.ArrayAdapter;
-import android.widget.Button;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import androidx.lifecycle.ViewModelProvider;
 import edu.cnm.deepdive.diceexample.databinding.ActivityMainBinding;
 import edu.cnm.deepdive.diceexample.model.Roll;
-import java.util.Arrays;
+import edu.cnm.deepdive.diceexample.viewmodel.DiceRollViewModel;
 
 public class MainActivity extends AppCompatActivity {
 
