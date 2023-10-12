@@ -1,6 +1,4 @@
 <resources>
   <string name="app_name">Dice Example</string>
-  <string name="first_title">First</string>
-  <string name="second_title">Second</string>
-  <string name="third_title">Third</string>
+  <string name="roll_title">Roll Dice</string>
 </resources>

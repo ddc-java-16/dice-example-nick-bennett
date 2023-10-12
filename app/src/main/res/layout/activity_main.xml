@@ -8,38 +8,22 @@
   android:padding="@dimen/half_dynamic_spacing"
   tools:context=".MainActivity">
 
-  <Button
-    android:id="@+id/first"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_margin="@dimen/half_dynamic_spacing"
-    android:text="@string/first_title"
-    app:layout_constraintBottom_toTopOf="@id/second"
-    app:layout_constraintEnd_toStartOf="@id/second"
-    app:layout_constraintHorizontal_chainStyle="packed"
+  <ListView
+    android:id="@+id/roll_values"
+    android:layout_width="0dp"
+    android:layout_height="0dp"
     app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
     app:layout_constraintTop_toTopOf="parent"
-    app:layout_constraintVertical_chainStyle="packed"/>
+    app:layout_constraintBottom_toTopOf="@id/roll"/>
 
   <Button
-    android:id="@+id/second"
+    android:id="@+id/roll"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:layout_margin="@dimen/half_dynamic_spacing"
-    android:text="@string/second_title"
-    app:layout_constraintTop_toBottomOf="@id/first"
-    app:layout_constraintStart_toEndOf="@id/first"
-    app:layout_constraintEnd_toStartOf="@id/third"
-    app:layout_constraintBottom_toTopOf="@id/third"/>
-
-  <Button
-    android:id="@+id/third"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_margin="@dimen/half_dynamic_spacing"
-    android:text="@string/third_title"
-    app:layout_constraintTop_toBottomOf="@id/second"
-    app:layout_constraintStart_toEndOf="@id/second"
+    android:text="@string/roll_title"
+    app:layout_constraintStart_toStartOf="parent"
     app:layout_constraintEnd_toEndOf="parent"
     app:layout_constraintBottom_toBottomOf="parent"/>
 
