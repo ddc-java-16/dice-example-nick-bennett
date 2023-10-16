@@ -8,10 +8,14 @@
   android:padding="@dimen/half_dynamic_spacing"
   tools:context=".controller.MainActivity">
 
-  <ListView
+  <GridView
     android:id="@+id/roll_values"
     android:layout_width="0dp"
     android:layout_height="0dp"
+    android:columnWidth="@dimen/die_face_size"
+    android:horizontalSpacing="@dimen/half_dynamic_spacing"
+    android:verticalSpacing="@dimen/half_dynamic_spacing"
+    android:numColumns="auto_fit"
     app:layout_constraintStart_toStartOf="parent"
     app:layout_constraintEnd_toEndOf="parent"
     app:layout_constraintTop_toTopOf="parent"

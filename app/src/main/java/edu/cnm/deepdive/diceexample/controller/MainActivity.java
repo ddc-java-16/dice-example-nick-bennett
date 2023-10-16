@@ -1,14 +1,12 @@
 package edu.cnm.deepdive.diceexample.controller;
 
 import android.util.Log;
-import android.widget.ArrayAdapter;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import androidx.lifecycle.ViewModelProvider;
 import edu.cnm.deepdive.diceexample.R;
 import edu.cnm.deepdive.diceexample.adapter.RollsAdapter;
 import edu.cnm.deepdive.diceexample.databinding.ActivityMainBinding;
-import edu.cnm.deepdive.diceexample.model.Roll;
 import edu.cnm.deepdive.diceexample.viewmodel.DiceRollViewModel;
 
 public class MainActivity extends AppCompatActivity {
@@ -21,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
     super.onCreate(savedInstanceState);
     binding = ActivityMainBinding.inflate(getLayoutInflater());
     setContentView(binding.getRoot());
-    binding.roll.setOnClickListener((v) -> viewModel.rollDice(20, 60));
+    binding.roll.setOnClickListener((v) -> viewModel.rollDice(50, 6));
     setupViewModel();
   }
 
@@ -30,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
     viewModel
         .getDiceRoll()
         .observe(this, (rolls) -> {
-          RollsAdapter adapter = new RollsAdapter(this, R.layout.item_roll_layout, rolls);
+          RollsAdapter adapter = new RollsAdapter(this, rolls);
           binding.rollValues.setAdapter(adapter);
         });
     viewModel
