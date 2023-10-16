@@ -7,7 +7,7 @@
   android:viewportWidth="557"
   tools:keep="true">
 
-  <path
+<path
     android:fillColor="?colorSecondary"
     android:pathData="M553.5,485.54C553.5,522.92 522.92,553.5 485.54,553.5H71.46C34.08,553.5 3.5,522.92 3.5,485.54V71.46C3.5,34.08 34.08,3.5 71.46,3.5h414.08C522.92,3.5 553.5,34.08 553.5,71.46V485.54z"
     android:strokeColor="?colorPrimaryVariant"
@@ -16,6 +16,30 @@
   <path
     android:fillColor="?colorPrimary"
     android:pathData="M117.03,117.03m-57.11,0a57.11,57.11 0,1 1,114.23 0a57.11,57.11 0,1 1,-114.23 0"
+    android:strokeColor="?colorPrimaryVariant"
+    android:strokeWidth="5"/>
+
+  <path
+    android:fillColor="?colorPrimary"
+    android:pathData="M439.97,117.03m-57.11,0a57.11,57.11 0,1 1,114.23 0a57.11,57.11 0,1 1,-114.23 0"
+    android:strokeColor="?colorPrimaryVariant"
+    android:strokeWidth="5"/>
+
+  <path
+    android:fillColor="?colorPrimary"
+    android:pathData="M117.03,278m-57,0a57,57 0,1 1,114 0a57,57 0,1 1,-114 0"
+    android:strokeColor="?colorPrimaryVariant"
+    android:strokeWidth="5"/>
+
+  <path
+    android:fillColor="?colorPrimary"
+    android:pathData="M439.97,278m-57,0a57,57 0,1 1,114 0a57,57 0,1 1,-114 0"
+    android:strokeColor="?colorPrimaryVariant"
+    android:strokeWidth="5"/>
+
+  <path
+    android:fillColor="?colorPrimary"
+    android:pathData="M117.03,439.97m-57.11,0a57.11,57.11 0,1 1,114.23 0a57.11,57.11 0,1 1,-114.23 0"
     android:strokeColor="?colorPrimaryVariant"
     android:strokeWidth="5"/>
 

@@ -10,8 +10,11 @@ public class Roll {
   @Expose
   private int value;
 
+  public int getValue() {
+    return value;
+  }
+
   @NonNull
-  @NotNull
   @Override
   public String toString() {
     return String.valueOf(value);

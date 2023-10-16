@@ -5,6 +5,8 @@ import android.widget.ArrayAdapter;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import androidx.lifecycle.ViewModelProvider;
+import edu.cnm.deepdive.diceexample.R;
+import edu.cnm.deepdive.diceexample.adapter.RollsAdapter;
 import edu.cnm.deepdive.diceexample.databinding.ActivityMainBinding;
 import edu.cnm.deepdive.diceexample.model.Roll;
 import edu.cnm.deepdive.diceexample.viewmodel.DiceRollViewModel;
@@ -28,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
     viewModel
         .getDiceRoll()
         .observe(this, (rolls) -> {
-          ArrayAdapter<Roll> adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, rolls);
+          RollsAdapter adapter = new RollsAdapter(this, R.layout.item_roll_layout, rolls);
           binding.rollValues.setAdapter(adapter);
         });
     viewModel

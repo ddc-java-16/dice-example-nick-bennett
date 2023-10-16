@@ -1,4 +1,5 @@
 <resources>
   <string name="app_name">Dice Example</string>
   <string name="roll_title">Roll Dice</string>
+  <string name="die_face_format">Face %d</string>
 </resources>
