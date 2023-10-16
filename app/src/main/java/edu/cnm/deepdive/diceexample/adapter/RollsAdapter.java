@@ -35,7 +35,7 @@ public class RollsAdapter extends ArrayAdapter<Roll> {
     ImageView face = (ImageView) ((convertView != null)
         ? convertView
         : inflater.inflate(R.layout.item_roll, parent, false));
-    int level = rolls[position].getValue();
+    int level = rolls[position].value();
     face.getDrawable().setLevel(level);
     face.setContentDescription(String.format(dieFaceFormat, level));
     return face;
